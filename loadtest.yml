@@ -1,0 +1,9 @@
+config:
+  target: 'https://serverless-puppies.azurewebsites.net/api/puppies'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+scenarios:
+  - flow:
+    - get:
+        url: "/"
