@@ -17,7 +17,7 @@ steps:
   - task: AzureRmWebAppDeployment@3
     displayName: "Function App Deploy: Super Simple Function App"
     inputs:
-      azureSubscription: "Microsoft Azure Internal Consumption (8d3519e1-8089-4300-ab0b-bfeda0f9844c)"
+      azureSubscription: "8d3519e1-8089-4300-ab0b-bfeda0f9844c"
       appType: functionapp
       WebAppName: "puppies-deanbryen"
       Package: "$(System.DefaultWorkingDirectory)/$(Build.BuildId).zip"
